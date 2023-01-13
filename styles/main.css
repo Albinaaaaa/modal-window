@@ -107,7 +107,7 @@ a:hover {
     transition: opacity 0.8s ease 0s;
 }
 
-.popup:target {
+.popup.open {
     opacity: 1;
     visibility: visible;
     transition: opacity 0.8s ease 0s;
@@ -129,7 +129,7 @@ a:hover {
     padding: 30px 10px;
 }
 
-.popup:target .popup__content {
+.popup.open .popup__content {
     transform: translate(0px, 0px);
     opacity: 1;
 }
@@ -160,3 +160,7 @@ a:hover {
 }
 
 .popup__text {}
+
+body.lock {
+    overflow: hidden;
+}
