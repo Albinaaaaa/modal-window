@@ -145,6 +145,14 @@ a:hover {
     transform: translate(0px, -100%);
 }
 
+.popup__content_image {
+    padding: 0;
+}
+
+.popup__image img {
+    max-width: 100%;
+}
+
 .popup__close {
     position: absolute;
     right: 15px;
@@ -164,3 +172,4 @@ a:hover {
 body.lock {
     overflow: hidden;
 }
+
